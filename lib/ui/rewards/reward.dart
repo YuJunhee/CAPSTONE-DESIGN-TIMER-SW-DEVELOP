@@ -22,10 +22,19 @@ class Reward extends StatelessWidget {
             100,
             (index) {
               return Center(
+                child: Container(
+                  padding: EdgeInsets.fromLTRB(40, 70, 40, 70),
+                  color: Colors.grey[600],
                   child: Text(
-                'Item $index',
-                style: Theme.of(context).textTheme.headline6,
-              ));
+                    'Item $index',
+                    //style: Theme.of(context).textTheme.headline6,
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 20.0,
+                    ),
+                  ),
+                ),
+              );
             },
           ),
         ));
