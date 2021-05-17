@@ -49,10 +49,10 @@ class DtimerState extends State<Dtimer> with TickerProviderStateMixin {
                     children: <Widget>[
                       // Main Circle position
                       Positioned.fill(
-                        top: 60.0,
-                        left: 60.0,
-                        right: 60.0,
-                        bottom: 60.0,
+                        top: 25.0,
+                        left: 25.0,
+                        right: 25.0,
+                        bottom: 25.0,
                         child: AnimatedBuilder(
                           animation: controller,
                           builder: (BuildContext context, Widget child) {
@@ -98,7 +98,7 @@ class DtimerState extends State<Dtimer> with TickerProviderStateMixin {
                                     timerString,
                                     //style: themeData.textTheme.headline4,
                                     style: TextStyle(
-                                      fontSize: 45.0,
+                                      fontSize: 40.0,
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold,
                                     ),

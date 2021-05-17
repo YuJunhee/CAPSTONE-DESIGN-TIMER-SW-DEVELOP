@@ -60,15 +60,15 @@ class AtimerState extends State<Atimer> {
               height: 60.0,
             ),
             SizedBox(
-              height: 60.0,
-              width: 150.0,
+              height: 50.0,
+              width: 120.0,
               child: ElevatedButton(
                   onPressed: handleStartStop,
                   child: Text(
                     _stopwatch.isRunning ? 'Stop' : 'Start',
                     style: TextStyle(
                       color: Colors.white,
-                      fontSize: 30.0,
+                      fontSize: 25.0,
                       //fontWeight: FontWeight.bold,
                     ),
                   )),
