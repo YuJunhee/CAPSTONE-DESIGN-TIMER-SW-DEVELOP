@@ -1,6 +1,7 @@
 # Capstone Design Project
 
-| this is a GWNU CAPSTONE DESIGN project which is editted by GWNU engineering students.
+| this is a GWNU CAPSTONE DESIGN project which is editted 
+  by GWNU engineering students.
 
 | Also this project is going to be expired on June 7th.
 
