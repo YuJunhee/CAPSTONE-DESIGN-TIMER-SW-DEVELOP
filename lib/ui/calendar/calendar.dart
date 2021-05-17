@@ -154,11 +154,13 @@ class _CalendarState extends State<Calendar> {
               children: <Widget>[
                 UserAccountsDrawerHeader(
                   currentAccountPicture: CircleAvatar(
-                    backgroundImage: AssetImage("assets/licking-cat.png"),
+                    // temporary User Image -> Ignore
+                    //backgroundImage: AssetImage("assets/licking-cat.png"),
                     backgroundColor: Colors.grey[850],
                   ),
                   otherAccountsPictures: <Widget>[
                     CircleAvatar(
+                      // temporary User Image -> Ignore
                       //backgroundImage: AssetImage("assets\\cat-second.png"),
                       backgroundColor: Colors.grey[850],
                     ),

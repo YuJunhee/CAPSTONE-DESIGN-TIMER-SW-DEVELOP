@@ -44,7 +44,10 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      //appBar: AppBar(title: Text('타이머 예시')),
+      appBar: AppBar(
+        title: Text('타이머 예시'),
+        backgroundColor: Colors.grey[850],
+      ),
       body: TabBarView(controller: controller, // 컨트롤러 연결
           children: [Home(), Calendar(), Reward(), Setting()]),
       bottomNavigationBar: Container(
