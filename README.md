@@ -20,8 +20,22 @@
 
 2nd : Calendar Page
 
+    this page has two diffrent page
+
+    first element of 2nd Page   -> Normal Calender view
+                                -> it shows normal information as a calendar
+                                -> also it invloves data which shows that user has been received 
+                                   stamp or not 
+
+    second element of 2nd Page  -> Sub page of first element
+                                -> in this sub page, user can get stamp thtough interacting with H/W device                                 
+
 
 
 3rd : Reward Collection Page
 
+    --
+
 4th : Setting Page
+
+    --
