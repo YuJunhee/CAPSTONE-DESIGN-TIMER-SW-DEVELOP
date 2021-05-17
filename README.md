@@ -1,8 +1,8 @@
 # Capstone Design Project
 
-this is a GWNU CAPSTONE DESIGN project which is editted by GWNU engineering student.
+| this is a GWNU CAPSTONE DESIGN project which is editted by GWNU engineering student.
 
-Also this project is going to be expired on Jube 7th.
+| Also this project is going to be expired on Jube 7th.
 
 ## TouchDown Timer
 
@@ -13,10 +13,14 @@ Also this project is going to be expired on Jube 7th.
 1st : Timer Page
 
     first element of 1st Page   -> Count Down Timer -> home page of App
+                                -> this subpage represents numerical value as circle shape
 
-    second element of 1st Page  -> Count up Timer  
+    second element of 1st Page  -> Count up Timer
+                                -> this subpage indicate numerical value which means counted up time  
 
 2nd : Calendar Page
+
+
 
 3rd : Reward Collection Page
 
