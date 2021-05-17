@@ -87,27 +87,42 @@ class _CalendarState extends State<Calendar> {
                 formatButtonShowsNext: false,
               ),
               builders: CalendarBuilders(
-                selectedDayBuilder: (context, date, events) => Container(
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Theme.of(context).primaryColor,
-                        borderRadius: BorderRadius.circular(8.0)),
-                    child: Text(
-                      date.day.toString(),
-                      style: TextStyle(color: Colors.white),
-                    )),
-                todayDayBuilder: (context, date, events) => Container(
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(8.0)),
-                    child: Text(
-                      date.day.toString(),
-                      style: TextStyle(color: Colors.white),
-                    )),
-              ),
+                  selectedDayBuilder: (context, date, events) => Container(
+                      margin: const EdgeInsets.all(5.0),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).primaryColor,
+                          borderRadius: BorderRadius.circular(8.0)),
+                      child: Text(
+                        date.day.toString(),
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  todayDayBuilder: (context, date, events) => Container(
+                      margin: const EdgeInsets.all(5.0),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8.0)),
+                      child: Text(
+                        date.day.toString(),
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  dowWeekdayBuilder: (context, date) => Container(
+                        margin: const EdgeInsets.all(5.0),
+                        alignment: Alignment.center,
+                        child: Text(
+                          date.toString(),
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                  dowWeekendBuilder: (context, date) => Container(
+                        margin: const EdgeInsets.all(5.0),
+                        alignment: Alignment.center,
+                        child: Text(
+                          date.toString(),
+                          style: TextStyle(color: Colors.red),
+                        ),
+                      )),
               calendarController: _controller,
             ),
 
@@ -236,27 +251,42 @@ class _RewardCalendarPageState extends State<RewardCalendarPage> {
                 formatButtonShowsNext: false,
               ),
               builders: CalendarBuilders(
-                selectedDayBuilder: (context, date, events) => Container(
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Theme.of(context).primaryColor,
-                        borderRadius: BorderRadius.circular(8.0)),
-                    child: Text(
-                      date.day.toString(),
-                      style: TextStyle(color: Colors.white),
-                    )),
-                todayDayBuilder: (context, date, events) => Container(
-                    margin: const EdgeInsets.all(5.0),
-                    alignment: Alignment.center,
-                    decoration: BoxDecoration(
-                        color: Colors.blue,
-                        borderRadius: BorderRadius.circular(8.0)),
-                    child: Text(
-                      date.day.toString(),
-                      style: TextStyle(color: Colors.white),
-                    )),
-              ),
+                  selectedDayBuilder: (context, date, events) => Container(
+                      margin: const EdgeInsets.all(5.0),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Theme.of(context).primaryColor,
+                          borderRadius: BorderRadius.circular(8.0)),
+                      child: Text(
+                        date.day.toString(),
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  todayDayBuilder: (context, date, events) => Container(
+                      margin: const EdgeInsets.all(5.0),
+                      alignment: Alignment.center,
+                      decoration: BoxDecoration(
+                          color: Colors.blue,
+                          borderRadius: BorderRadius.circular(8.0)),
+                      child: Text(
+                        date.day.toString(),
+                        style: TextStyle(color: Colors.white),
+                      )),
+                  dowWeekdayBuilder: (context, date) => Container(
+                        margin: const EdgeInsets.all(5.0),
+                        alignment: Alignment.center,
+                        child: Text(
+                          date.toString(),
+                          style: TextStyle(color: Colors.white),
+                        ),
+                      ),
+                  dowWeekendBuilder: (context, date) => Container(
+                        margin: const EdgeInsets.all(5.0),
+                        alignment: Alignment.center,
+                        child: Text(
+                          date.toString(),
+                          style: TextStyle(color: Colors.red),
+                        ),
+                      )),
               calendarController: _controller,
             ),
 
@@ -277,7 +307,7 @@ class _RewardCalendarPageState extends State<RewardCalendarPage> {
                         descStyle: TextStyle(
                           color: Colors.black,
                           fontWeight: FontWeight.bold,
-                          fontSize: 20.0,
+                          fontSize: 17.0,
                         ),
                         titleStyle: TextStyle(
                           color: Colors.black,
@@ -305,7 +335,7 @@ class _RewardCalendarPageState extends State<RewardCalendarPage> {
                               style: TextStyle(
                                 fontWeight: FontWeight.bold,
                                 color: Colors.white,
-                                fontSize: 20.0,
+                                fontSize: 18.0,
                               ),
                             ),
                             onPressed: () => Navigator.pop(context2),
