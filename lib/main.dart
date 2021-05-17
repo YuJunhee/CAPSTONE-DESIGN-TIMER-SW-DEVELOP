@@ -44,9 +44,12 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Scaffold element - appBar
       appBar: AppBar(
         title: Text('타이머 예시'),
+        // Color
         backgroundColor: Colors.grey[850],
+        // AppBar setting Icon
         actions: <Widget>[
           IconButton(
               icon: Icon(Icons.settings),
@@ -55,6 +58,7 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
               })
         ],
       ),
+      // Scaffold element - body
       body: TabBarView(controller: controller, // 컨트롤러 연결
           children: [Home(), Calendar(), Reward(), Setting()]),
       bottomNavigationBar: Container(
