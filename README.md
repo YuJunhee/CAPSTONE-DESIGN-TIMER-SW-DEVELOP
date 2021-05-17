@@ -6,9 +6,9 @@ Also this project is going to be expired on Jube 7th.
 
 ## TouchDown Timer
 
-This prototype-App has four Page.
+| This prototype-App has four Page.
 
-Each of Pages has following name:
+| Each of Pages has following name:
 
 1st : Timer Page
 
