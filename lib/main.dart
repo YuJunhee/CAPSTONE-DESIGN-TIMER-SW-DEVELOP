@@ -46,7 +46,14 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
     return Scaffold(
       // Scaffold element - appBar
       appBar: AppBar(
-        title: Text('타이머 예시'),
+        title: Text(
+          'Touch Down Timer',
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20.0,
+            color: Colors.grey[400],
+          ),
+        ),
         // Color
         backgroundColor: Colors.grey[850],
         // AppBar setting Icon
