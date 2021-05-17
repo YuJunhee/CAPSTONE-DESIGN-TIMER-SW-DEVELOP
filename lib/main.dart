@@ -47,6 +47,13 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
       appBar: AppBar(
         title: Text('타이머 예시'),
         backgroundColor: Colors.grey[850],
+        actions: <Widget>[
+          IconButton(
+              icon: Icon(Icons.settings),
+              onPressed: () {
+                print("setting icon is clicked");
+              })
+        ],
       ),
       body: TabBarView(controller: controller, // 컨트롤러 연결
           children: [Home(), Calendar(), Reward(), Setting()]),
