@@ -110,13 +110,13 @@ class _CalendarState extends State<Calendar> {
               calendarController: _controller,
             ),
 
-            //// Snack Bar
+            //// Raised Button
             Builder(builder: (BuildContext context2) {
               return Container(
                 child: Align(
                   alignment: Alignment(0.70, 0.50),
                   child: RaisedButton(
-                    child: Text("Reward"),
+                    child: Text("Reward Calendar"),
                     onPressed: () {
                       Navigator.push(
                           context2,
@@ -134,7 +134,9 @@ class _CalendarState extends State<Calendar> {
   }
 }
 
+/////////////////////////////////////////////////////////////////////////
 // sub Page
+/////////////////////////////////////////////////////////////////////////
 class RewardCalendarPage extends StatefulWidget {
   @override
   _RewardCalendarPageState createState() => _RewardCalendarPageState();
