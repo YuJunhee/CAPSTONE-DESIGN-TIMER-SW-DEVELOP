@@ -1,8 +1,8 @@
 # Capstone Design Project
 
-| this is a GWNU CAPSTONE DESIGN project which is editted by GWNU engineering student.
+| this is a GWNU CAPSTONE DESIGN project which is editted by GWNU engineering students.
 
-| Also this project is going to be expired on Jube 7th.
+| Also this project is going to be expired on June 7th.
 
 ## TouchDown Timer
 
