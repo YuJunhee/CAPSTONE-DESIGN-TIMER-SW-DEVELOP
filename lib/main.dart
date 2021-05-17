@@ -93,9 +93,9 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
               children: <Widget>[
                 UserAccountsDrawerHeader(
                   currentAccountPicture: CircleAvatar(
-                    // temporary User Image -> Ignore
-                    //backgroundImage: AssetImage("assets/licking-cat.png"),
-                    backgroundColor: Colors.grey[850],
+                    // temporary User Image
+                    backgroundImage: AssetImage("assets\\cat_sample2.png"),
+                    backgroundColor: Colors.grey[400],
                   ),
                   otherAccountsPictures: <Widget>[
                     CircleAvatar(
@@ -106,45 +106,63 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
                   ],
                   //////text - name
                   accountName: Text(
-                    "Time Timer Setting",
+                    "사용자:  Loaf Cat",
                     style: TextStyle(
                       color: Colors.white,
                       fontWeight: FontWeight.bold,
+                      fontSize: 11.0,
                     ),
                   ),
                   //////text - email
                   accountEmail: Text(
-                    "",
+                    "junheeyu.***@Gmail.com",
                     style: TextStyle(
-                      color: Colors.black,
+                      color: Colors.white,
                     ),
                   ),
                   ////// list arrow
-                  onDetailsPressed: () {
-                    print("arrow is clicked");
-                  },
+                  // onDetailsPressed: () {
+                  //   print("arrow is clicked");
+                  // },
                   ////// Drawer head design
                   decoration: BoxDecoration(
                       color: Colors.grey[850],
                       borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
+                        bottomLeft: Radius.circular(20.0),
+                        bottomRight: Radius.circular(20.0),
                       )),
                 ),
                 ///////Drawer Head list
                 ListTile(
                   leading: Icon(
-                    Icons.timer,
+                    Icons.person,
                     color: Colors.white,
                   ),
                   title: Text(
-                    "Timer",
+                    "Sign in",
                     style: TextStyle(
                       color: Colors.white,
                     ),
                   ),
                   onTap: () {
-                    print("Timer is clicked");
+                    print("Sign in is clicked");
+                  },
+                  //trailing: Icon(Icons.add),
+                ),
+
+                ListTile(
+                  leading: Icon(
+                    Icons.person_pin_rounded,
+                    color: Colors.white,
+                  ),
+                  title: Text(
+                    "Profile",
+                    style: TextStyle(
+                      color: Colors.white,
+                    ),
+                  ),
+                  onTap: () {
+                    print("Profile is clicked");
                   },
                   //trailing: Icon(Icons.add),
                 ),
