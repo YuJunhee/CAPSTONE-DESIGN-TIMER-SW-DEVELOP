@@ -1,3 +1,5 @@
+import 'dart:js';
+
 import 'package:flutter/material.dart';
 import 'package:rflutter_alert/rflutter_alert.dart';
 
@@ -9,6 +11,10 @@ import './ui/home.dart';
 void main() => runApp(MaterialApp(
       home: MyTabs(),
       debugShowCheckedModeBanner: false,
+      // move to setting page
+      routes: {
+        'setting': (context) => Setting(),
+      },
     ));
 
 // TabController 객체를 멤버로 만들어서 상태를 유지하기 때문에 StatefulWidget 클래스 사용
@@ -63,6 +69,7 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
               icon: Icon(Icons.settings),
               onPressed: () {
                 print("setting icon is clicked");
+                Navigator.pushNamed(context, 'setting');
               })
         ],
       ),
@@ -121,11 +128,6 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
                       color: Colors.white,
                     ),
                   ),
-                  ////// list arrow
-                  // onDetailsPressed: () {
-                  //   print("arrow is clicked");
-                  // },
-                  ////// Drawer head design
                   decoration: BoxDecoration(
                       color: Colors.grey[850],
                       borderRadius: BorderRadius.only(
@@ -211,6 +213,7 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
                   ),
                   onTap: () {
                     print("setting is clicked");
+                    Navigator.pushNamed(context, 'setting');
                   },
                   //trailing: Icon(Icons.add),
                 ),
