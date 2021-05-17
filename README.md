@@ -1,6 +1,6 @@
-# flutter_application_1
+# Capstone Design Project
 
-A new Flutter project.
+this is a GWNU CAPSTONE DESIGN project which is editted by GWNU engineering student.
 
 ## Getting Started
 
