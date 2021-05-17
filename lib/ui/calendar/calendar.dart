@@ -30,14 +30,14 @@ class _CalendarState extends State<Calendar> {
         ),
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.settings),
-            onPressed: () {
-              print("setting icon is clicked");
-            },
-          ),
-        ],
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: Icon(Icons.settings),
+        //     onPressed: () {
+        //       print("setting icon is clicked");
+        //     },
+        //   ),
+        // ],
       ),
       body: SingleChildScrollView(
         child: Column(
@@ -145,110 +145,110 @@ class _CalendarState extends State<Calendar> {
           ],
         ),
       ),
-      drawer: Container(
-        width: 250,
-        child: Drawer(
-          child: Container(
-            color: Colors.grey[700],
-            child: ListView(
-              padding: EdgeInsets.zero,
-              children: <Widget>[
-                UserAccountsDrawerHeader(
-                  currentAccountPicture: CircleAvatar(
-                    // temporary User Image -> Ignore
-                    //backgroundImage: AssetImage("assets/licking-cat.png"),
-                    backgroundColor: Colors.grey[850],
-                  ),
-                  otherAccountsPictures: <Widget>[
-                    CircleAvatar(
-                      // temporary User Image -> Ignore
-                      //backgroundImage: AssetImage("assets\\cat-second.png"),
-                      backgroundColor: Colors.grey[850],
-                    ),
-                  ],
-                  //////text - name
-                  accountName: Text(
-                    "Time Timer Setting",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  //////text - email
-                  accountEmail: Text(
-                    "",
-                    style: TextStyle(
-                      color: Colors.black,
-                    ),
-                  ),
-                  ////// list arrow
-                  onDetailsPressed: () {
-                    print("arrow is clicked");
-                  },
-                  ////// Drawer head design
-                  decoration: BoxDecoration(
-                      color: Colors.grey[850],
-                      borderRadius: BorderRadius.only(
-                        bottomLeft: Radius.circular(40.0),
-                        bottomRight: Radius.circular(40.0),
-                      )),
-                ),
-                ///////Drawer Head list
-                ListTile(
-                  leading: Icon(
-                    Icons.timer,
-                    color: Colors.white,
-                  ),
-                  title: Text(
-                    "Timer",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  onTap: () {
-                    print("Timer is clicked");
-                  },
-                  //trailing: Icon(Icons.add),
-                ),
+      // drawer: Container(
+      //   width: 250,
+      //   child: Drawer(
+      //     child: Container(
+      //       color: Colors.grey[700],
+      //       child: ListView(
+      //         padding: EdgeInsets.zero,
+      //         children: <Widget>[
+      //           UserAccountsDrawerHeader(
+      //             currentAccountPicture: CircleAvatar(
+      //               // temporary User Image -> Ignore
+      //               //backgroundImage: AssetImage("assets/licking-cat.png"),
+      //               backgroundColor: Colors.grey[850],
+      //             ),
+      //             otherAccountsPictures: <Widget>[
+      //               CircleAvatar(
+      //                 // temporary User Image -> Ignore
+      //                 //backgroundImage: AssetImage("assets\\cat-second.png"),
+      //                 backgroundColor: Colors.grey[850],
+      //               ),
+      //             ],
+      //             //////text - name
+      //             accountName: Text(
+      //               "Time Timer Setting",
+      //               style: TextStyle(
+      //                 color: Colors.white,
+      //                 fontWeight: FontWeight.bold,
+      //               ),
+      //             ),
+      //             //////text - email
+      //             accountEmail: Text(
+      //               "",
+      //               style: TextStyle(
+      //                 color: Colors.black,
+      //               ),
+      //             ),
+      //             ////// list arrow
+      //             onDetailsPressed: () {
+      //               print("arrow is clicked");
+      //             },
+      //             ////// Drawer head design
+      //             decoration: BoxDecoration(
+      //                 color: Colors.grey[850],
+      //                 borderRadius: BorderRadius.only(
+      //                   bottomLeft: Radius.circular(40.0),
+      //                   bottomRight: Radius.circular(40.0),
+      //                 )),
+      //           ),
+      //           ///////Drawer Head list
+      //           ListTile(
+      //             leading: Icon(
+      //               Icons.timer,
+      //               color: Colors.white,
+      //             ),
+      //             title: Text(
+      //               "Timer",
+      //               style: TextStyle(
+      //                 color: Colors.white,
+      //               ),
+      //             ),
+      //             onTap: () {
+      //               print("Timer is clicked");
+      //             },
+      //             //trailing: Icon(Icons.add),
+      //           ),
 
-                ListTile(
-                  leading: Icon(
-                    Icons.settings,
-                    color: Colors.white,
-                  ),
-                  title: Text(
-                    "setting",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  onTap: () {
-                    print("setting is clicked");
-                  },
-                  //trailing: Icon(Icons.add),
-                ),
+      //           ListTile(
+      //             leading: Icon(
+      //               Icons.settings,
+      //               color: Colors.white,
+      //             ),
+      //             title: Text(
+      //               "setting",
+      //               style: TextStyle(
+      //                 color: Colors.white,
+      //               ),
+      //             ),
+      //             onTap: () {
+      //               print("setting is clicked");
+      //             },
+      //             //trailing: Icon(Icons.add),
+      //           ),
 
-                ListTile(
-                  leading: Icon(
-                    Icons.question_answer,
-                    color: Colors.white,
-                  ),
-                  title: Text(
-                    "Q&A",
-                    style: TextStyle(
-                      color: Colors.white,
-                    ),
-                  ),
-                  onTap: () {
-                    print("Q&A is clicked");
-                  },
-                  //trailing: Icon(Icons.add),
-                ),
-              ],
-            ),
-          ),
-        ),
-      ),
+      //           ListTile(
+      //             leading: Icon(
+      //               Icons.question_answer,
+      //               color: Colors.white,
+      //             ),
+      //             title: Text(
+      //               "Q&A",
+      //               style: TextStyle(
+      //                 color: Colors.white,
+      //               ),
+      //             ),
+      //             onTap: () {
+      //               print("Q&A is clicked");
+      //             },
+      //             //trailing: Icon(Icons.add),
+      //           ),
+      //         ],
+      //       ),
+      //     ),
+      //   ),
+      // ),
     );
   }
 }

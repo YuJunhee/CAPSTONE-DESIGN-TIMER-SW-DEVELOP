@@ -9,7 +9,7 @@ class Reward extends StatelessWidget {
         appBar: AppBar(
           backgroundColor: Colors.grey[850],
           title: Text(
-            '리워드 위젯 샘플',
+            'Reward Collection',
             style: TextStyle(
               fontWeight: FontWeight.bold,
               fontSize: 17.0,

@@ -48,12 +48,17 @@ class AtimerState extends State<Atimer> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      // Background Color setup
+      backgroundColor: Colors.grey[850],
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(formatTime(_stopwatch.elapsedMilliseconds),
-                style: TextStyle(fontSize: 48.0)),
+                style: TextStyle(color: Colors.white, fontSize: 48.0)),
+            SizedBox(
+              height: 30.0,
+            ),
             ElevatedButton(
                 onPressed: handleStartStop,
                 child: Text(_stopwatch.isRunning ? 'Stop' : 'Start')),
