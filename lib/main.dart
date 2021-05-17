@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 
 import './ui/calendar/calendar.dart';
 import './ui/rewards/reward.dart';
@@ -146,6 +147,36 @@ class MyTabsState extends State<MyTabs> with SingleTickerProviderStateMixin {
                   ),
                   onTap: () {
                     print("Sign in is clicked");
+                    Alert(
+                        context: context,
+                        title: "LOGIN",
+                        content: Column(
+                          children: <Widget>[
+                            TextField(
+                              decoration: InputDecoration(
+                                icon: Icon(Icons.account_circle),
+                                labelText: 'Username',
+                              ),
+                            ),
+                            TextField(
+                              obscureText: true,
+                              decoration: InputDecoration(
+                                icon: Icon(Icons.lock),
+                                labelText: 'Password',
+                              ),
+                            ),
+                          ],
+                        ),
+                        buttons: [
+                          DialogButton(
+                            onPressed: () => Navigator.pop(context),
+                            child: Text(
+                              "LOGIN",
+                              style:
+                                  TextStyle(color: Colors.white, fontSize: 20),
+                            ),
+                          )
+                        ]).show();
                   },
                   //trailing: Icon(Icons.add),
                 ),
