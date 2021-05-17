@@ -20,7 +20,7 @@ class DtimerState extends State<Dtimer> with TickerProviderStateMixin {
     super.initState();
     controller = AnimationController(
       vsync: this,
-      duration: Duration(seconds: 10), //차감식 타이머 시간 설정
+      duration: Duration(seconds: 3), //차감식 타이머 시간 설정
     );
   }
 
@@ -47,6 +47,7 @@ class DtimerState extends State<Dtimer> with TickerProviderStateMixin {
                   aspectRatio: 1.0,
                   child: Stack(
                     children: <Widget>[
+                      // Main Circle position
                       Positioned.fill(
                         top: 60.0,
                         left: 60.0,
@@ -67,10 +68,11 @@ class DtimerState extends State<Dtimer> with TickerProviderStateMixin {
                       Align(
                         alignment: FractionalOffset.center,
                         child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                          mainAxisAlignment: MainAxisAlignment.center,
                           crossAxisAlignment: CrossAxisAlignment.center,
                           //차감식 타이머 멘션 스트링, 타이머 남은 시간 스트링 두개 정렬 및 나열
                           children: <Widget>[
+                            // First Animated Builder -> Text
                             AnimatedBuilder(
                                 animation: controller,
                                 builder: (BuildContext context, Widget child) {
@@ -84,6 +86,11 @@ class DtimerState extends State<Dtimer> with TickerProviderStateMixin {
                                     ),
                                   );
                                 }),
+                            // Sized Box for Aligning between two AnimatedBuilders
+                            SizedBox(
+                              height: 50.0,
+                            ),
+                            // Second Animated Builder -> Numerical value
                             AnimatedBuilder(
                                 animation: controller,
                                 builder: (BuildContext context, Widget child) {
@@ -111,6 +118,7 @@ class DtimerState extends State<Dtimer> with TickerProviderStateMixin {
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: <Widget>[
                   FloatingActionButton(
+                    backgroundColor: Colors.grey[600],
                     child: AnimatedBuilder(
                       animation: controller,
                       builder: (BuildContext context, Widget child) {

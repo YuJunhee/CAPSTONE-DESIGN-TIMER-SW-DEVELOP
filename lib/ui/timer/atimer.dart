@@ -55,13 +55,24 @@ class AtimerState extends State<Atimer> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(formatTime(_stopwatch.elapsedMilliseconds),
-                style: TextStyle(color: Colors.white, fontSize: 48.0)),
+                style: TextStyle(color: Colors.white, fontSize: 90.0)),
             SizedBox(
-              height: 30.0,
+              height: 60.0,
             ),
-            ElevatedButton(
-                onPressed: handleStartStop,
-                child: Text(_stopwatch.isRunning ? 'Stop' : 'Start')),
+            SizedBox(
+              height: 60.0,
+              width: 150.0,
+              child: ElevatedButton(
+                  onPressed: handleStartStop,
+                  child: Text(
+                    _stopwatch.isRunning ? 'Stop' : 'Start',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 30.0,
+                      //fontWeight: FontWeight.bold,
+                    ),
+                  )),
+            ),
           ],
         ),
       ),
