@@ -8,12 +8,14 @@ class Setting extends StatelessWidget {
       backgroundColor: Colors.grey[850],
       // Scaffold element - appBar
       appBar: AppBar(
+          backgroundColor: Colors.grey[850],
           title: Text(
-        'Settings',
-        style: TextStyle(
-          fontSize: 15.0,
-        ),
-      )),
+            'Settings',
+            style: TextStyle(
+              fontSize: 17.0,
+              fontWeight: FontWeight.bold,
+            ),
+          )),
       body: ListView(
         padding: const EdgeInsets.all(11),
         children: <Widget>[

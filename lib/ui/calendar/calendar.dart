@@ -25,6 +25,7 @@ class _CalendarState extends State<Calendar> {
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
+            fontSize: 17.0,
           ),
         ),
         backgroundColor: Colors.grey[850],

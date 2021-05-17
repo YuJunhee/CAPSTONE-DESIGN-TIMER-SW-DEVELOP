@@ -5,7 +5,17 @@ class Reward extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(title: Text('리워드 위젯 샘플')),
+        backgroundColor: Colors.grey[850],
+        appBar: AppBar(
+          backgroundColor: Colors.grey[850],
+          title: Text(
+            '리워드 위젯 샘플',
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 17.0,
+            ),
+          ),
+        ),
         body: GridView.count(
           crossAxisCount: 2,
           children: List.generate(
