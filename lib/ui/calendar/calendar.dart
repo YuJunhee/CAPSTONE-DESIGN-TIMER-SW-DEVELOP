@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:rflutter_alert/rflutter_alert.dart';
 import 'package:table_calendar/table_calendar.dart';
 
 class Calendar extends StatefulWidget {
@@ -116,7 +117,12 @@ class _CalendarState extends State<Calendar> {
                 child: Align(
                   alignment: Alignment(0.70, 0.50),
                   child: RaisedButton(
-                    child: Text("Reward Calendar"),
+                    child: Text(
+                      "Reward Calendar",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     onPressed: () {
                       Navigator.push(
                           context2,
@@ -150,6 +156,14 @@ class _RewardCalendarPageState extends State<RewardCalendarPage> {
     super.initState();
     _controller = CalendarController();
   }
+
+  // var alertStyle = AlertStyle(
+  //   descStyle: TextStyle(
+  //     color: Colors.black,
+  //     fontWeight: FontWeight.bold,
+  //     fontSize: 20.0,
+  //   ),
+  // );
 
   @override
   Widget build(BuildContext context3) {
@@ -252,21 +266,54 @@ class _RewardCalendarPageState extends State<RewardCalendarPage> {
                 child: Align(
                   alignment: Alignment(0.70, 0.50),
                   child: RaisedButton(
-                    child: Text("Reward"),
+                    child: Text(
+                      "Reward",
+                      style: TextStyle(
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
                     onPressed: () {
-                      Scaffold.of(context2).showSnackBar(SnackBar(
-                        content: Text(
-                          "도장을 찍어주세요.",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                            color: Colors.white,
-                            fontSize: 20.0,
-                            fontWeight: FontWeight.bold,
+                      var alertStyle = AlertStyle(
+                        descStyle: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                        ),
+                        titleStyle: TextStyle(
+                          color: Colors.black,
+                          fontWeight: FontWeight.bold,
+                          fontSize: 20.0,
+                        ),
+                        alertBorder: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10.0),
+                          side: BorderSide(
+                            color: Colors.grey,
                           ),
                         ),
-                        backgroundColor: Colors.grey[600],
-                        duration: Duration(milliseconds: 2000),
-                      ));
+                      );
+
+                      Alert(
+                        context: context2,
+                        style: alertStyle,
+                        title: "오늘도, 수고했어",
+                        desc: "타이머의 버튼을 눌러 도장을 받으세요",
+                        image: Image.asset("assets\\pushdown.jpg"),
+                        buttons: [
+                          DialogButton(
+                            child: Text(
+                              "이해했습니다",
+                              style: TextStyle(
+                                fontWeight: FontWeight.bold,
+                                color: Colors.white,
+                                fontSize: 20.0,
+                              ),
+                            ),
+                            onPressed: () => Navigator.pop(context2),
+                            color: Colors.grey[600],
+                            radius: BorderRadius.circular(10.0),
+                          ),
+                        ],
+                      ).show();
                     },
                   ),
                 ),
