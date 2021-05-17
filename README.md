@@ -2,7 +2,9 @@
 
 this is a GWNU CAPSTONE DESIGN project which is editted by GWNU engineering student.
 
-## Getting Started
+Also this project is going to be expired on Jube 7th.
+
+## TouchDown Timer
 
 This project is a starting point for a Flutter application.
 
